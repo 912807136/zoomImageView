@@ -13,8 +13,8 @@ public class CommonUtil {
 		File file = new File(context.getCacheDir(), "image");
 		return file.getAbsolutePath();
 	}    
-
-	public static Builder getImageBuilder() {
+   
+	public static Builder getImageBuilder() {    
 		Builder builder = new DisplayImageOptions.Builder()
 				.showImageOnLoading(R.drawable.item_default_image)
 				.showImageForEmptyUri(R.drawable.item_default_image)
