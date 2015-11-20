@@ -12,7 +12,7 @@ public class CommonUtil {
 	public static String getDirectoty(Context context) {
 		File file = new File(context.getCacheDir(), "image");
 		return file.getAbsolutePath();
-	}
+	}    
 
 	public static Builder getImageBuilder() {
 		Builder builder = new DisplayImageOptions.Builder()

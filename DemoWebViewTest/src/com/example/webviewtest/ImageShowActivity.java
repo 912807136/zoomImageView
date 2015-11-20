@@ -37,7 +37,7 @@ public class ImageShowActivity extends Activity {
 	public static final String POSITION = "position";
 	private String[] imageURLs;
 	private int position = 0;
-	private DisplayImageOptions options;
+	private DisplayImageOptions options1;
 	private ViewPager viewPager;
 
 	@Override
@@ -54,7 +54,7 @@ public class ImageShowActivity extends Activity {
 		if (imageURLs == null || imageURLs.length == 0) {
 			finish();
 		}
-		options = CommonUtil.getImageBuilder().build();
+		options1 = CommonUtil.getImageBuilder().build();
 
 		initImageLoader();
 
@@ -174,7 +174,7 @@ public class ImageShowActivity extends Activity {
 			PhotoView photoView = new PhotoView(container.getContext());
 			if (!TextUtils.isEmpty(imageURLs[position])) {
 				ImageLoader.getInstance().displayImage(imageURLs[position],
-						photoView, options);
+						photoView, options1);
 			}
 			container.addView(photoView, LayoutParams.MATCH_PARENT,
 					LayoutParams.MATCH_PARENT);
