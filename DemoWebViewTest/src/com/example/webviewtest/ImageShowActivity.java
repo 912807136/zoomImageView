@@ -144,7 +144,7 @@ public class ImageShowActivity extends Activity {
 			Log.e("mytag", e.getMessage(), e);
 			}
 			bitmap.recycle();
-		}
+		} 
 		
 		
 	}
